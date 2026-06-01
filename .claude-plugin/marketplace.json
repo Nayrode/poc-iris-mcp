@@ -1,0 +1,23 @@
+{
+  "name": "iris-tools",
+  "owner": {
+    "name": "Dorian TETU",
+    "email": "doriantetu34@gmail.com"
+  },
+  "metadata": {
+    "description": "Tools for working with InterSystems IRIS code from Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "iris-code",
+      "source": "./plugin",
+      "description": "View, edit, compile and query InterSystems IRIS code via the iris-mcp server.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dorian TETU",
+        "email": "doriantetu34@gmail.com"
+      }
+    }
+  ]
+}

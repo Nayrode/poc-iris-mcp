@@ -1,0 +1,25 @@
+{
+  // --- InterSystems server definition (used by the Server Manager + Language Server) ---
+  // Matches the docker-compose mapping (web port 52773). The password is NOT stored
+  // here: on first connect VS Code prompts for it and saves it to the OS keychain.
+  "intersystems.servers": {
+    "iris-local": {
+      "webServer": {
+        "scheme": "http",
+        "host": "localhost",
+        "port": 52773
+      },
+      "username": "superuser",
+      "description": "Local IRIS Community container (docker-compose)"
+    }
+  },
+
+  // --- Active ObjectScript connection ---
+  // The Language Server reads class definitions from this connection to power
+  // hover, go-to-definition and completion.
+  "objectscript.conn": {
+    "server": "iris-local",
+    "ns": "USER",
+    "active": true
+  }
+}

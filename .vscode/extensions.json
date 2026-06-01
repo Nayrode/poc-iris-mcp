@@ -1,0 +1,8 @@
+{
+  "// note": "Recommends the official InterSystems ObjectScript toolchain. The Language Server provides IntelliSense; it activates automatically for ObjectScript files using the active server connection configured in settings.json.",
+  "recommendations": [
+    "intersystems.language-server",
+    "intersystems-community.vscode-objectscript",
+    "intersystems-community.servermanager"
+  ]
+}
